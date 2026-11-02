@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Todo List</h1>
+    <p class="subtitle">오늘 할 일을 하나씩 완료해 보세요.</p>
+
+    <form id="todo-form">
+      <label class="sr-only" for="todo-input">할 일</label>
+      <input id="todo-input" type="text" placeholder="새로운 할 일 입력" autocomplete="off">
+      <button type="submit">추가</button>
+    </form>
+
+    <ul id="todo-list" aria-live="polite"></ul>
+    <p id="empty-message">아직 등록된 할 일이 없습니다.</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
